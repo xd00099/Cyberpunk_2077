@@ -1,1 +1,234 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	
+	<title>Cyberpunk 2077</title>
+	
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    
+    <script src="main.js"></script>
+	<script src="https://code.highcharts.com/stock/highstock.js"></script>
+	<script src="https://code.highcharts.com/modules/timeline.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/map.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+	<script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+</head>
+
+<body>
+    <section class="Intro CenterAlign">
+        <div class="Wrapper">
+            <h1>Cyberpunk 2077</h1>
+        </div>
+    </section>
+
+    <section id="intro">
+        <h1>Story behind Cyberpunk 2077</h1>
+        <div class="introContainer">
+        <div id="introduction">
+            <p style="font-size:1vw;">&emsp;"Cyberpunk 2077 takes place in Night City, 
+                a crime-ridden city in the Free State of California.
+                 Players take control of "V," a mercenary deeply embedded
+                  in the underworld of Night City. "V" is customizable to the
+                   player's choosing, allowing them to be any gender and have 
+                   any skin tone. Their backgrounds and combat styles are also
+                    up to the player's preference, from brute force strength or
+                     crippling the advantage of opponents with advanced hacking."</p>
+            <br><br><br><br>
+            <p style="font-size:1vw;">Below is the official synopsis for <a id='introweb' href="https://www.cyberpunk.net/us/en"><em>Cyber punk 2077</em>
+                    via the game's website:
+                </a>
+            </p>
+            <blockquote ::before style="font-size:1vw;">
+                <em>Cyberpunk 2077 is an open-world, action-adventure story
+                 set in Night City, a megalopolis obsessed with power, glamour and
+                  body modification. You play as V, a mercenary outlaw going after
+                   a one-of-a-kind implant that is the key to immortality. You can
+                    customize your character’s cyberware, skillset and playstyle, 
+                    and explore a vast city where the choices you make shape the 
+                    story and the world around you.</em> 
+            </blockquote>
+    
+        </div>
+        <div id='characters'>
+            <h1 style="font-size: x-large; color: #00f0ff;">Major Character Cast</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 8</div>
+                  <img src="Cyberpunk-Keanu.jpg" style="width:100%">
+                  <div class="text">JOHNNY SILVERHAND</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 8</div>
+                  <img src="RICHAR_NIGHT.jpg" style="width:100%">
+                  <div class="text">RICHAR NIGHT</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 8</div>
+                  <img src="SABURO_ARASAKA.jpg" style="width:100%">
+                  <div class="text">SABURO ARASAKA</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="ALT_CUNNINGHAM.jpg" style="width:100%">
+                    <div class="text">ALT CUNNINGHAM</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="COMMISSIONER J. HAMMERMAN.jpg" style="width:100%">
+                    <div class="text">COMMISSIONER J. HAMMERMAN</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="PLACIDE.png" style="width:100%">
+                    <div class="text">PLACIDE</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="BRIGITTE.jpg" style="width:100%">
+                    <div class="text">BRIGITTE</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="SASQUATCH.jpg" style="width:100%">
+                    <div class="text">SASQUATCH</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                  <span class="dot" onclick="currentSlide(6)"></span> 
+                  <span class="dot" onclick="currentSlide(7)"></span> 
+                  <span class="dot" onclick="currentSlide(8)"></span>  
+                </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="timeline-sec">
+        <h1>The History of Cyberpunk</h1>
+        <div id="timeline"></div>
+    </section>
+
+    <section>
+        <h1>Steam Stats of Cyberpunk 2077</h1>
+        <div id="steam"></div>
+        <div class="align-button">
+            <button class="btn" id="current_btn">Current Players</button>
+            <button class="btn-r" id="peak_btn">Peak Today</button>
+        </div>
+    </section>  
+    
+    <br><br><br><br>
+    
+    <section>
+        <h1>Popular State</h1>
+        <div id="mapChart"></div>
+    </section>
+    <br><br><br><br>
+    <section>
+        <h1>Popularity Comparison</h1>
+        <br><br><br><br>
+        <p style="text-align: center; font-size: 30px; color: #a0bbbd; margin-top: -50px;">Search Interests across 4 Different Games in the Past 30 Days</p>
+        <p id='compareSource' style="color: #a0bbbd;;">Source: https://trends.google.com/trends/</p>
+        <div id="compare">
+            <div id="compare-bar"></div>
+            <div id="lineChart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h1 id="comments-title">Comments</h1>
+        <p id='compareSource' style="color: grey;">Source: https://www.metacritic.com/game/pc/cyberpunk-2077</p>
+        <div id='poscontainer'>
+            <div id='poscomment'>
+                <img id="pos-img" src="pos.png">
+            </div>
+
+            <div id='poswords'>
+                <ul id='ul-comment'>
+                    <li>Great game with huge focus on story, characters and world building. I dont remember last time when the rpg story absorbed me so much. Yes there are few bugs here are there (playing on ps4pro), but nothing gamebreaking. Usually minor visual glitches. If you like story RPGs this is simply game for you. If the small bugs bother you too much, then this will be a game for you after few updates. But it one the must have eigter way. (sooner or later)</li>
+                    <br>
+                    <li>AFTER Patch 1.04 huge improvement on ps4 pro. Great game love it so much. Waiting for new patches to fix the game.</li>
+                    <br>
+                    <li>
+                        What I liked: incredibly beautiful and detailed world, incredible interesting characters, the plot is very attractive. I played 60 hours and I can't stop.
+                    </li>
+                    <br>
+                    <li>
+                        I had no problems with the game on my PS4 Slim. No bugs that spoiled the story or something. I'm playing after patch 1.04, and my experience has been very satisfying.
+                    </li>
+                    <br>
+                    <li>
+                        One of the most epic stories in video game history .. you better be prepared for the greatest experience in your life!!!
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="align-button">
+            <button class="btn" id="pos_btn">Positive Comments</button>
+            <button class="btn-b" id="neg_btn">Negative Comments</button>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br><br><br>
+    <section class='finalpart'>
+        <h1>Video Teasers</h1>
+        <div class="align-button">
+            <button class="btn" id='official'>Official Trailer</button>
+            <button class="btn" id='night'>Night City View</button>
+            <button class="btn" id='car'>Vehicle</button>
+            <button class="btn" id='char'>Character Creation</button>
+            <button class="btn" id='review'>Review</button>
+        </div>
+        <div id="youtube">
+            <iframe width="1500" height="800" src="https://www.youtube.com/embed/BO8lX3hDU30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h1 style="font-size: 35px;">Act Fast and Enjoy the Night City Now!</h1>
+        <div id='play'>
+            <button class="btn-b" id='playnow' type="button" onclick="location.href='https://www.cyberpunk.net/us/en/'">PLAY</button>
+        </div>
+    </section>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
