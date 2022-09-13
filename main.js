@@ -221,49 +221,49 @@ function plotTimeLine(){
             name: 'The game first drew its influences from the 1982 film Blade Runner',
             label: 'Blade Runner',
             description: 'Blade Runner is a 1982 science fiction film directed by Ridley Scott, and written by Hampton Fancher and David Peoples.'+ 
-            '<br><img src="Blade_Runner.png"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/Blade_Runner.png"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br><br>',
             color: "#fcee09"
           }, {
             x: Date.UTC(1994),
             name: 'Early influence from video game System Shock',
             label: 'System Shock',
             description: "System Shock is a 1994 first-person action-adventure video game developed by LookingGlass Technologies and published by Origin Systems." +
-            '<br><img src="Sysshock.jpg"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/Sysshock.jpg"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br>',
             color: '#fcee09'
         }, {
             x: Date.UTC(2000),
             name: 'Another video game which brought influence',
             label: 'Deus Ex',
             description: "Deus Ex is a 2000 action role-playing game developed by Ion Storm and published by Eidos Interactive."+
-            '<br><img src="Dxcover.jpg"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/Dxcover.jpg"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br>',
             color: '#fcee09'
         }, {
             x: Date.UTC(2004),
             name: 'Media company brought inflence to Cyberpunk',
             label: 'Ghost in the shell',
             description: "Ghost in the Shell[a] is a Japanese cyberpunk media franchise based on the seinen manga series of the same name written and illustrated by Masamune Shirow."+
-            '<br><img src="ghost.jpeg"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/ghost.jpeg"style="height:45%;width:45%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>',
             color: '#fcee09'
         }, {
             x: Date.UTC(2012),
             name: 'Cyberpunk first Announced',
             label: 'Announced',
             description: "Cyberpunk 2077 was announced in May 2012."+
-            '<br><img src="announ.jpg"style="height:100%;width:100%;" class="center"></img><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/announ.jpg"style="height:100%;width:100%;" class="center"></img><br><br><br><br><br><br><br><br><br><br>',
             color: '#fcee09'
         }, {
             x: Date.UTC(2013),
             name: 'First Trailor Debuts in 2013',
             label: 'First Trailor',
             description: "Grubb, Jeff (10 January 2013). 'CD Projekt Red reveals Cyberpunk 2077 teaser trailer'. GamesBeat."+
-            '<br><img src="firsttrail.jpg"style="height:100%;width:100%;" class="center"></img><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/firsttrail.jpg"style="height:100%;width:100%;" class="center"></img><br><br><br><br><br><br><br><br><br><br>',
             color: '#fcee09'
         }, {
             x: Date.UTC(2020),
             name: 'Published',
             label: 'Published',
             description: 'Cyberpunk officially released on December 10, 2020'+
-            '<br><img src="cyberpunk.jpeg"style="height:80%;width:80%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>',
+            '<br><img src="images/cyberpunk.jpeg"style="height:80%;width:80%;" class="center"></img><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>',
             color: '#fcee09'
         }], function (chartt) { 
           chartt.renderer.image('https://www.highcharts.com/samples/graphics/sun.png',5,5,30,30)
@@ -778,19 +778,19 @@ window.onload = function() {
     document.getElementById('pos_btn').addEventListener('click', function () {
       document.getElementById("ul-comment").innerHTML = pos_comment;
       document.getElementById("ul-comment").style.color = "#fcee09";
-      document.getElementById("pos-img").src = "pos.png";
+      document.getElementById("pos-img").src = "images/pos.png";
       document.getElementById("comments-title").style.color = "#fcee09";
     });
 
     document.getElementById('neg_btn').addEventListener('click', function () {
       document.getElementById("ul-comment").innerHTML = neg_comment;
       document.getElementById("ul-comment").style.color = "#00f0ff";
-      document.getElementById("pos-img").src = "neg.png";
+      document.getElementById("pos-img").src = "images/neg.png";
       document.getElementById("comments-title").style.color = "#00f0ff";
     });
 
     document.getElementById('official').addEventListener('click', function () {
-      document.getElementById("youtube").innerHTML = '<iframe width="1500" height="800" src="https://www.youtube.com/embed/BO8lX3hDU30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      document.getElementById("youtube").innerHTML = '<iframe width="1500" height="800" src="https://www.youtube.com/embed/qIcTM8WXFjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     });
 
     document.getElementById('night').addEventListener('click', function () {

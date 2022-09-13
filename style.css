@@ -43,14 +43,14 @@ section {
 
 /* Intro GIF */
 .Intro.CenterAlign {
-    background-image: url("background.gif");
+    background-image: url("images/background.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .finalpart {
-    background-image: url("traffic.gif");
+    background-image: url("images/traffic.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
